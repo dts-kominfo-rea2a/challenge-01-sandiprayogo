@@ -2,46 +2,31 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 const firstUser = {
-  name: "ANDIKA",
-  gender: "male",
-  age: 10,
-  email: "andika@dingdong.com",
-  favoriteColor: ["Yellow", "Pink", "White", "Purple"],
-  isHavePet: "Yes",
-  education: [{ name: "SD 01", city: "Sumenep" }],
-  favoriteRestaurant: [
-    "Bento",
-    "Sushi",
-    "Pancake",
-    "Eggy",
-    "Tempura",
-    "Padang",
-    "Tteok",
-  ],
+    name: 'Monica',
+    gender: 'Female',
+    age: 17,
+    email: "monica@dingdong.com",
+    favoriteColor: ["Yellow", "Pink", "White", "Purple"],
+    isHavePet: "Yes",
+    education: [
+        {name: "SD 01", city: "Jakarta", graduate:"2016"},
+        {name: "SMP 02", city: "Jakarta", graduate: "2019"},
+        {name: "SMA 03", city: "Tangerang"}],
+    favoriteRestaurant: ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Padang", "Tteok"],
 };
 const secondUser = {
-  name: "SANDI",
-  gender: "Male",
-  age: 20,
-  email: "sandi@dingdong.com",
-  favoriteColor: ["Blue", "Black", "Red"],
-  isHavePet: "No",
-  education: [
-    { name: "SDN 1", city: "Sumenep", graduate: "2013" },
-    { name: "MTsN", city: "Sumenep", graduate: "2016" },
-    { name: "MAN", city: "Sumenep", graduate: "2019" },
-    { name: "UTM", city: "Bangkalan" },
-  ],
-  favoriteRestaurant: [
-    "Tempura",
-    "Bento",
-    "Sushi",
-    "Padang",
-    "Katsu",
-    "Geprek",
-    "Pancake",
-    "Eggy",
-  ],
+    name: "Wendy",
+    gender: "Male",
+    age: 23,
+    email: "wendy@dingdong.com",
+    favoriteColor: ["Blue", "Black", "Grey"],
+    isHavePet: "No",
+    education: [
+        {name: "SD 02", city: 'Jakarta', graduate: "2010"}, {city: "Bogor", graduate: "2013"},
+        {	name: "SMA 01", city: "Surabaya", graduate: "2016"},
+        {name: "Universitas Maju", city: "Tangerang"}
+    ],
+    favoriteRestaurant: ["Tempura","Bento", "Sushi", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"]
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
@@ -49,12 +34,12 @@ const users = [firstUser, secondUser];
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
-  console.log(users.length || users.size);
-  console.log(users);
+    console.log(users.length || users.size);
+    console.log(users);
 }
 
 main();
 
 module.exports = {
-  users,
+    users
 };
